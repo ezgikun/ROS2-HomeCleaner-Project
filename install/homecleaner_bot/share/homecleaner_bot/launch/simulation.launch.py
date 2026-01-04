@@ -1,0 +1,1 @@
+/home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/launch/simulation.launch.py

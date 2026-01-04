@@ -1,0 +1,9 @@
+source;share/homecleaner_bot/hook/pythonpath.ps1
+source;share/homecleaner_bot/hook/pythonpath.dsv
+source;share/homecleaner_bot/hook/pythonpath.sh
+source;share/homecleaner_bot/hook/ament_prefix_path.ps1
+source;share/homecleaner_bot/hook/ament_prefix_path.dsv
+source;share/homecleaner_bot/hook/ament_prefix_path.sh
+source;../../build/homecleaner_bot/share/homecleaner_bot/hook/pythonpath_develop.ps1
+source;../../build/homecleaner_bot/share/homecleaner_bot/hook/pythonpath_develop.dsv
+source;../../build/homecleaner_bot/share/homecleaner_bot/hook/pythonpath_develop.sh

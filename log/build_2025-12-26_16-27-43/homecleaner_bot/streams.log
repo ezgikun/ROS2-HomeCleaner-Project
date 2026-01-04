@@ -1,0 +1,33 @@
+[0.474s] Invoking command in '/home/ezgialtiok/homecleaner_ws/build/homecleaner_bot': PYTHONPATH=/home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/build --no-deps symlink_data
+[0.648s] running develop
+[0.765s] running egg_info
+[0.766s] creating homecleaner_bot.egg-info
+[0.766s] writing homecleaner_bot.egg-info/PKG-INFO
+[0.766s] writing dependency_links to homecleaner_bot.egg-info/dependency_links.txt
+[0.766s] writing entry points to homecleaner_bot.egg-info/entry_points.txt
+[0.766s] writing requirements to homecleaner_bot.egg-info/requires.txt
+[0.766s] writing top-level names to homecleaner_bot.egg-info/top_level.txt
+[0.766s] writing manifest file 'homecleaner_bot.egg-info/SOURCES.txt'
+[0.767s] reading manifest file 'homecleaner_bot.egg-info/SOURCES.txt'
+[0.767s] writing manifest file 'homecleaner_bot.egg-info/SOURCES.txt'
+[0.768s] running build_ext
+[0.768s] Creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/lib/python3.10/site-packages/homecleaner-bot.egg-link (link to .)
+[0.769s] 
+[0.769s] Installed /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot
+[0.769s] running symlink_data
+[0.769s] creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index
+[0.769s] creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index/resource_index
+[0.769s] creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index/resource_index/packages
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/resource/homecleaner_bot -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index/resource_index/packages
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/package.xml -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot
+[0.769s] creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/launch
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/launch/simulation.launch.py -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/launch
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/launch/navigation.launch.py -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/launch
+[0.769s] creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/urdf
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/urdf/robot.urdf.xacro -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/urdf
+[0.769s] creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/world
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/world/my_home.world -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/world
+[0.769s] creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/maps
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/maps/my_home_map.yaml -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/maps
+[0.769s] symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/maps/my_home_map.pgm -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/maps
+[0.787s] Invoked command in '/home/ezgialtiok/homecleaner_ws/build/homecleaner_bot' returned '0': PYTHONPATH=/home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/build --no-deps symlink_data

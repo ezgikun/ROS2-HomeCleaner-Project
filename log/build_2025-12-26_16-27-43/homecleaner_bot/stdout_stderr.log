@@ -1,0 +1,31 @@
+running develop
+running egg_info
+creating homecleaner_bot.egg-info
+writing homecleaner_bot.egg-info/PKG-INFO
+writing dependency_links to homecleaner_bot.egg-info/dependency_links.txt
+writing entry points to homecleaner_bot.egg-info/entry_points.txt
+writing requirements to homecleaner_bot.egg-info/requires.txt
+writing top-level names to homecleaner_bot.egg-info/top_level.txt
+writing manifest file 'homecleaner_bot.egg-info/SOURCES.txt'
+reading manifest file 'homecleaner_bot.egg-info/SOURCES.txt'
+writing manifest file 'homecleaner_bot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/lib/python3.10/site-packages/homecleaner-bot.egg-link (link to .)
+
+Installed /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot
+running symlink_data
+creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index
+creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index/resource_index
+creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index/resource_index/packages
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/resource/homecleaner_bot -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/ament_index/resource_index/packages
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/package.xml -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot
+creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/launch
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/launch/simulation.launch.py -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/launch
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/launch/navigation.launch.py -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/launch
+creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/urdf
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/urdf/robot.urdf.xacro -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/urdf
+creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/world
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/world/my_home.world -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/world
+creating /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/maps
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/maps/my_home_map.yaml -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/maps
+symbolically linking /home/ezgialtiok/homecleaner_ws/build/homecleaner_bot/maps/my_home_map.pgm -> /home/ezgialtiok/homecleaner_ws/install/homecleaner_bot/share/homecleaner_bot/maps
