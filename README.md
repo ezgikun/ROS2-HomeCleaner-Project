@@ -40,13 +40,13 @@ To run this project on your local machine, follow these steps.
 ```bash
 git clone [https://github.com/ezgikun/ROS2-HomeCleaner-Project.git](https://github.com/ezgikun/ROS2-HomeCleaner-Project.git)
 cd ROS2-HomeCleaner-Project
+```
 2. Build the Docker Image
 
 Build the environment using the provided Dockerfile. This ensures all ROS2 packages (Nav2, SLAM, etc.) are installed.
-Bash
-
+```bash
 docker build -t final_project_image .
-
+```
 ## 🕹️ Usage Scenarios
 
 You can run the project in different modes depending on your needs. Below are the commands for the most common scenarios.
@@ -62,14 +62,13 @@ xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
     --device /dev/dri:/dev/dri \
     --rm final_project_image \
     bash -c "source /opt/ros/humble/setup.bash && source /root/homecleaner_ws/install/setup.bash && cd /root/homecleaner_ws && ros2 launch start_all.launch.py"
-
+```
 ### 2. Creating a New Map (SLAM Mode)
 
 If you want to map a new environment, follow these two steps using two separate terminals.
 
 Step 1: Start Simulation & SLAM (Terminal 1) This launches Gazebo and the SLAM Toolbox in async mode.
-Bash
-
+```bash
 xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
     --env="DISPLAY=$DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
@@ -78,19 +77,18 @@ xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
     --rm final_project_image \
     bash -c "source /opt/ros/humble/setup.bash && source /root/homecleaner_ws/install/setup.bash && ros2 launch homecleaner_bot simulation.launch.py
     & sleep 5 && ros2 launch slam_toolbox online_async_launch.py"
-
+```
 Step 2: Start Teleoperation (Terminal 2) Open a new terminal to control the robot manually using WASD keys.
 Bash
-
+```bash
 docker exec -it $(docker ps -q -l) bash -c "source /root/homecleaner_ws/install/setup.bash && python3 /root/homecleaner_ws/src/homecleaner_bot/wasd_control.py"
-
+```
 After mapping, use the RViz MapSaver plugin or CLI to save your map.
 
 ### 3. 📍 Navigation Testing (Manual Goal)
 
 Use this command to test the Nav2 stack without running the autonomous cleaning script. You can set goals manually using the "2D Goal Pose" tool in RViz.
-Bash
-
+```bash
 xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
     --env="DISPLAY=$DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
@@ -100,7 +98,7 @@ xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
     bash -c "source /opt/ros/humble/setup.bash && source /root/homecleaner_ws/install/setup.bash && ros2 launch homecleaner_bot simulation.launch.py & sleep 5
     && ros2 launch nav2_bringup bringup_launch.py use_sim_time:=True map:=/root/homecleaner_ws/src/homecleaner_bot/maps/my_home_map.yaml autostart:=True & sleep 5
     && ros2 run rviz2 rviz2 -d /root/homecleaner_ws/src/homecleaner_bot/my_nav.rviz"
-
+```
 
 📂 Project Structure
 
