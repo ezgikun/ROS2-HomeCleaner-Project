@@ -101,7 +101,7 @@ xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
 ```
 
 📂 Project Structure
-
+```text
 .
 ├── Dockerfile                      # Builds the complete ROS2 & Gazebo environment
 └── src
@@ -125,7 +125,7 @@ xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
             └── my_home_layout/       # Custom 3D Model assets for the house
                 ├── model.config
                 └── model.sdf
-
+```
 🛠️ Tech Stack
 
     Framework: ROS 2 Humble 
