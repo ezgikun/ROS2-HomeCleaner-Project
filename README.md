@@ -61,7 +61,7 @@ xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --device /dev/dri:/dev/dri \
     --rm final_project_image \
-    bash -c "source /opt/ros/humble/setup.bash && source /root/homecleaner_ws/install/setup.bash && cd /root/homecleaner_ws && ros2 launch start_all.launch.py"
+    bash -c "source /opt/ros/humble/setup.bash && source /root/homecleaner_ws/install/setup.bash && cd /root/homecleaner_ws && ros2 launch homcleaner_bot start_all.launch.py"
 ```
 ### 2. Creating a New Map (SLAM Mode)
 
@@ -69,14 +69,11 @@ If you want to map a new environment, follow these two steps using two separate 
 
 Step 1: Start Simulation & SLAM (Terminal 1) This launches Gazebo and the SLAM Toolbox in async mode.
 ```bash
-xhost +local:root && docker run -it --net=host --ipc=host --pid=host \
-    --env="DISPLAY=$DISPLAY" \
-    --env="QT_X11_NO_MITSHM=1" \
-    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-    --device /dev/dri:/dev/dri \
-    --rm final_project_image \
-    bash -c "source /opt/ros/humble/setup.bash && source /root/homecleaner_ws/install/setup.bash && ros2 launch homecleaner_bot simulation.launch.py
-    & sleep 5 && ros2 launch slam_toolbox online_async_launch.py"
+xhost +local:root && docker run -it --net=host --ipc=host --pid=host
+--env="DISPLAY=$DISPLAY"     --env="QT_X11_NO_MITSHM=1"     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw"
+--device /dev/dri:/dev/dri     --rm final_project_image
+bash -c "source /opt/ros/humble/setup.bash && source /root/homecleaner_ws/install/setup.bash && ros2 launch homecleaner_bot simulation.launch.py & sleep 5 && ros2 launch slam_toolbox online_async_launch.py"
+
 ```
 Step 2: Start Teleoperation (Terminal 2) Open a new terminal to control the robot manually using WASD keys.
 Bash
