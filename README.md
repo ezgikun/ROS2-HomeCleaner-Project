@@ -15,7 +15,7 @@ The entire development environment is **Dockerized**, allowing the project to ru
 **[CLICK HERE TO WATCH THE PROJECT DEMO VIDEO] https://youtu.be/2TWdJ3Nkwd4**
 
 ### Project Video
-**[CLICK HERE TO WATCH THE PROJECT DEMO VIDEO] https://youtu.be/KzCKMZwR6-c**
+**[CLICK HERE TO WATCH THE PROJECT VIDEO] https://youtu.be/KzCKMZwR6-c**
 
 ---
 
